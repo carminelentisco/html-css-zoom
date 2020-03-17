@@ -78,14 +78,19 @@ body {
     flex-wrap: wrap;
 }    
 
-#guest .user.active {
-    border-color: #a2c46e;
-}
-
 #guest .user {
     position: relative;
     border: 4px solid #000;   
     flex-basis: 25%;
+    transition: border .4s;
+}
+
+#guest .user:hover{
+    border-color: white;
+}
+
+#guest .user.active {
+    border-color: #a2c46e;
 }
 
 #guest .user img {
@@ -141,6 +146,10 @@ body {
 }
 
 /* ACTION user-action */
+
+#action .user-action {
+    transform: translateX(-50px);
+}
 
 #action .user-action ul {
     display: flex;
