@@ -19,8 +19,6 @@ body {
     display: block;
 }
 
-
-
 /* ZOOM */
 
 #zoom {
@@ -127,42 +125,31 @@ body {
     justify-content: space-between;
 }
 
-/* ACTION mic-cam */
-
-#action .mic-cam ul {
+#action .mic-cam ul,
+#action .user-action ul{
     display: flex;
     align-items: center;
 }
 
-#action .mic-cam ul li{
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    padding-left: 10px;
-}
-
-#action .mic-cam ul li i  {
-    font-size: 20px;
-}
-
-/* ACTION user-action */
-
-#action .user-action {
-    transform: translateX(-50px);
-}
-
-#action .user-action ul {
-    display: flex;
-    align-items: center;
-}
-
+#action .mic-cam ul li,
 #action .user-action ul li{
-    list-style: none;
     display: inline-block;
+    list-style: none;
     text-align: center;
-    padding-left: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    background: rgba(0, 0, 0, .0);
+    border-radius: 5px;
+    transition: background .4s;
 }
 
+#action .end-meeting a:hover,
+#action .mic-cam ul li:hover,
+#action .user-action ul li:hover {
+    background: rgba(0, 0, 0, .60);
+}
+
+#action .mic-cam ul li i,
 #action .user-action ul li i  {
     font-size: 20px;
 }
@@ -177,5 +164,9 @@ body {
 .end-meeting a {
     text-decoration: none;
     font-weight: 700;
+    font-size:25px;
     color: red;
+    background: rgba(0, 0, 0, .0);
+    border-radius: 5px;
+    transition: background .4s;
 }
