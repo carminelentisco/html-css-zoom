@@ -112,13 +112,17 @@ body {
    opacity: 1;
 }
 
-/* action */
+/* ACTION */
 
 #action {
     background-color: #3e3c3f;
     width: 100%;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
+
+/* ACTION mic-cam */
 
 #action .mic-cam ul {
     display: flex;
@@ -136,3 +140,20 @@ body {
     font-size: 20px;
 }
 
+/* ACTION user-action */
+
+#action .user-action ul {
+    display: flex;
+    align-items: center;
+}
+
+#action .user-action ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#action .user-action ul li i  {
+    font-size: 20px;
+}
