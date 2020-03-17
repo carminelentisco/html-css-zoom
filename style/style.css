@@ -157,3 +157,16 @@ body {
 #action .user-action ul li i  {
     font-size: 20px;
 }
+
+/* ACTION  end-meeting */
+
+.end-meeting {
+    display: flex;
+    align-items: center;
+}
+
+.end-meeting a {
+    text-decoration: none;
+    font-weight: 700;
+    color: red;
+}
