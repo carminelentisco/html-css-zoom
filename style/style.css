@@ -13,6 +13,14 @@ body {
     font-weight: 500;
 }
 
+/* UTILITY */
+
+.display-block {
+    display: block;
+}
+
+
+
 /* ZOOM */
 
 #zoom {
@@ -107,7 +115,24 @@ body {
 /* action */
 
 #action {
-    background-color: rgb(0, 47, 255);
+    background-color: #3e3c3f;
     width: 100%;
-    text-align: center;
+    padding: 10px;
 }
+
+#action .mic-cam ul {
+    display: flex;
+    align-items: center;
+}
+
+#action .mic-cam ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#action .mic-cam ul li i  {
+    font-size: 20px;
+}
+
